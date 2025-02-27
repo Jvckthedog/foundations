@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- all this code is based off TOP: Data Types & Conditionals -->
+     <script>
+        // first example
+        let message = "Hello";
+        message = 123456;
+
+        console.log(message); // output: 123456
+     </script>
+
+     <script>
+        // number example
+        let n = 123;
+        n = 12.325
+
+        console.log(n);
+     </script>
+
+     <script>
+        // infinity
+        // alert(1/0); comment to remove alert
+     </script>
+
+     <script>
+        //BigInt
+        console.log(9007199254740991 + 1);
+
+     </script>
+
+     <script>
+        //BigInt
+        const bigInt = 1234567890123456789012345678901234567890n;
+        console.log(bigInt);
+     </script>
+
+     <script>
+        // embedbed Backtick example
+        console.log (`the result is ${1+2}`);
+     </script>
+
+     <script>
+        // boolean example 
+        let nameFieldChecked = true;
+        let ageFieldchecked = false;
+
+        console.log(nameFieldChecked);
+        console.log(ageFieldchecked);
+     </script>
+
+     <script>
+        // boolean example cont. 
+        let isGreater = 4 > 1;
+
+        console.log(isGreater);
+     </script>
+
+     <script>
+        // Null example
+        let age = null;
+
+        console.log(age);
+     </script>
+
+     <script>
+        // first string example
+        const string= "what happens when the world comes to an end?"
+
+        console.log(string); 
+     </script>
+
+     <script>
+        const badString = string;
+
+        console.log(badString);
+     </script>
+
+     <script>
+        // embedding Javascript
+        const name = "Chris";
+        const greeting = `hello ${name}`;
+        
+        console.log(greeting); 
+     </script>
+
+     <script>
+        // embedding multiple variables
+        const one = "hello, ";
+        const two = "how are you?";
+        const join =`${one}${two}`;
+
+        console.log(join);
+     </script>
+
+     <button>Press Me</button>
+     <div id="greeting"></div>
+
+     <script>
+        // Concatenation in Context
+        const button = document.querySelector("button");
+
+        function greet() {
+            const name = prompt("what is your name?");
+            const greeting = document.querySelector("#greeting");
+            greeting.textContent = `Hello ${name}, nice to see you!`;
+        }
+
+        button.addEventListener("click", greet);
+     </script>
+
+     <script>
+        // Including expressions in strings 
+        const song = "Fight the Youth";
+        const score = 9;
+        const highestScore = 10;
+        const output = `I like the song ${song}. I gave it a score of ${(score/highestScore)*100}%`;
+
+        console.log(output);
+     </script>
+
+     <script>
+        const newline = `One day you finall knew
+        what you had to do, and began,`;
+
+        console.log(newline);
+     </script>
+
+     <script>
+        // combining Numbers and Strings 
+        const back = "front ";
+        const three = 242;
+
+        console.log(back + three);
+        // dont forget the space after your text in the string. 
+     </script>
+
+     
+</body>
+</html>

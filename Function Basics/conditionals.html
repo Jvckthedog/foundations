@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // If Statement
+        let hour = 12
+        if (hour < 18) {
+            greeting = "Good Day"; 
+        }
+
+        console.log(greeting); // Good Day
+    </script>
+
+    <script>
+        // else Statement
+        let hour2 = 12
+        if (hour2 < 10) {
+            greeting = "good Day";
+        } else {
+            greeting = "Good Evening";
+        }
+
+        console.log(greeting); // Good Evening
+    </script>
+
+    <script>
+        // else if Statement
+        let time = 9
+        if (time <10) {
+            greeting = "Good Morning";
+        } else if (time < 20) {
+            greeting = "Good Day";
+        } else {
+            greeting = "Good evening";
+        }
+
+        console.log (greeting); // Good Morning
+    </script>
+
+    <script>
+        let shoppingDone = false; 
+        let childsAllowance;
+
+        if (shoppingDone === true) {
+            childsAllowance = 10;
+        } else {
+            childsAllowance = 5;
+        }
+
+        console.log(childsAllowance);
+    </script>
+
+<!-- Switch Example: HTML -->
+<p></p>
+
+
+    <script>
+        // Switch Example: JS
+    </script>
+
+    <script>
+        // ternary operator
+        const greeting = isBirthday
+            ? "happy birthday Jordan, I hope you have a great day!"
+            : "good morning Jordan.";
+    </script>
+
+    <label for="theme">Select theme: </label>
+    <select id="theme">
+        <option value="white">White</option>
+        <option value="black">Black</option>
+    </select>
+
+    <h1>This is my website</h1>
+
+    <script>
+    const select = document.querySelector("select");
+    const html = document.querySelector("html");
+    document.body.style.padding = "10px";
+
+    function update(bgColor, textColor) {
+        html.style.backgroundColor = bgColor;
+        html.style.color = textColor;
+}
+
+    select.addEventListener("change", () =>
+        select.value === "black"
+        ? update("black", "white")
+        : update("white", "black"),
+);
+    </script>
+
+    <script>
+        let something = 12
+        let somethingElse = 30
+
+        if (something == 12 && somethingElse == 30) {
+          console.log("thats something")
+        } else if (something == 12 || somethingElse == 30) {
+          console.log("thats something else")
+        }
+    </script>
+
+
+</body>
+</html>
