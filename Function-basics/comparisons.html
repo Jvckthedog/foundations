@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // basic Comparisons
+        console.log(2 > 1); // true (correct)
+        console.log(2 == 1); // false (wrong)
+        console.log(2 != 1); // true (correct)
+    </script>
+
+    <script>
+        // variable comparison
+        let result = 5 > 4;
+        console.log(result); // true
+    </script>
+
+    <script>
+        // dictionary comparisons 
+        console.log("z" > "a"); // true
+        console.log("glow" > "glee"); // true
+        console.log("Giant" > "be"); // false
+    </script>
+
+    <script>
+        // comparing different values
+        console.log("2" > 1); // true because string "2" becomes a number.
+        console.log("01" == 1); // true, string "01" becomes a number
+    </script>
+
+    <script>
+        // comparing boolean values
+        console.log(true == 1); // true 
+        console.log( false == 0); // true 
+    </script>
+
+    <script>
+        // regular equality check 
+        console.log(0 == false); // true 
+
+        // this also ends with empty strings 
+        console.log("" == false); // true 
+    </script>
+
+    <script>
+        // strict equality check 
+        console.log(0 === false); // false
+    </script>
+
+    <script>
+        // Null & undefined strict check
+        console.log(null === undefined); // true
+    </script>
+
+    <script>
+        // Null & undefined non-strict check 
+        console.log(null == undefined);
+    </script>
+
+    <script>
+        // incomparable undefined
+        console.log(undefined > 0); // false
+        console.log(undefined < 0); // false
+        console.log(undefined == 0); // false
+    </script>
+
+    <script>
+        // summary test
+        console.log (5 > 4); // true
+        console.log( "apple" > "pineapple"); // false
+        // remember it works backwords. Z is greater than A
+        console.log( "2" > "12") // true 
+        // this uses dictionary comaprison as well. 2 is greater an one
+        console.log (undefined == null); // true
+        console.log( undefined === null); // false
+        console.log( null == "\n0\n"); // false
+        console.log( null === +"\n0\n"); // false
+    </script>
+</body>
+</html>
